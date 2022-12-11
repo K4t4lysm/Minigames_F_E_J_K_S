@@ -45,7 +45,7 @@ void lose() {
   fill(0);
   textSize(50);
   text("HighScore: " + counter, height/2, width/2);
-  text("Um in das Hauptmenü zu gelangen, drücke p", 100, height/2);
+  text("Um in das Hauptmenü zu gelangen, drücke p", width/2, height/2);
 }
 
 

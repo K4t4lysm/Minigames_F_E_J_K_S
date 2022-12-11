@@ -88,6 +88,7 @@ void setup() {
 
   //If-Anweisungen, um durch die Spiele zu steuern:
   if (spielStatus.equals("elonaSpiel")) {
+    frameRate(60);
     ElonaSetup();
   }
   if (spielStatus.equals("simonSpiel")) {
@@ -113,11 +114,11 @@ println(spielStatus);
     textAlign(CENTER);
     textSize(50);
     fill(0, 255, 0);
-    text("Geographie-Spiel     press g to start", width/2, height/2-100);
-    text("Bomberman               press b to start", width/2, height/2-50);
-    text("Johnny            _           press j to start",width/2, height/2);
-    text("Kautar                           press k to start", width/2, height/2+50);
-    text("Finn                                press f to start", width/2, height/2+100);
+    text("Geographie-Spiel     Drücke zum Starten g", width/2, height/2-100);
+    text("Bomberman               Drücke zum Starten b", width/2, height/2-50);
+    text("Johnny                           Drücke zum Starten j",width/2, height/2);
+    text("MazeRunner               Drücke zum Starten k", width/2, height/2+50);
+    text("Labyrinth                     Drücke zum Starten f", width/2, height/2+100);
   }
 
   if (spielStatus.equals("elonaSpiel")) {
@@ -131,7 +132,7 @@ println(spielStatus);
     if (johnnyEndGame) {
       background(0);
       textSize(80);
-      text("Drücke die Taste p, \num wieder ins Menü zu kommen", 50, 80);
+      text("Drücke die Taste p, \num wieder ins Menü zu kommen", width/2, height/2);
     }
   } else if (spielStatus.equals("kautarSpiel")) {
     rectMode(CORNER);

@@ -29,7 +29,7 @@ class Spielfeld {
           gameRunning = false;
           textSize(70);
           fill(0,255,0);
-          text("Drücke die Taste p für das Menü", 50, height/2);
+          text("Drücke die Taste p für das Menü", width/2, height/2);
           
         }
           
@@ -42,7 +42,7 @@ class Spielfeld {
           gameRunning = false;
           textSize(70);
           fill(0,255,0);
-          text("Drücke die Taste p für das Menü", 50, height/2);
+          text("Drücke die Taste p für das Menü", width/2, height/2);
           
         
         }
