@@ -1,0 +1,3 @@
+000 Richtige Antworten
+005 Anzahl der Fehler
+-005 Punkte am Ende des Spiels
