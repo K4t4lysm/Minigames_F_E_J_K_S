@@ -122,6 +122,7 @@ println(spielStatus);
   }
 
   if (spielStatus.equals("elonaSpiel")) {
+    fill(255);
     ElonaDraw();
   } else  if (spielStatus.equals("simonSpiel")) {
 
