@@ -114,11 +114,12 @@ println(spielStatus);
     textAlign(CENTER);
     textSize(50);
     fill(0, 255, 0);
-    text("Geographie-Spiel     Drücke zum Starten g", width/2, height/2-100);
-    text("Bomberman               Drücke zum Starten b", width/2, height/2-50);
-    text("Johnny                           Drücke zum Starten j",width/2, height/2);
-    text("MazeRunner               Drücke zum Starten k", width/2, height/2+50);
-    text("Labyrinth                     Drücke zum Starten f", width/2, height/2+100);
+    text("Geographie-Spiel     Drücke zum Starten g", width/2, height/2-300);
+    text("Bomberman               Drücke zum Starten b", width/2, height/2-250);
+    text("Johnny                           Drücke zum Starten j",width/2, height/2-200);
+    text("MazeRunner               Drücke zum Starten k", width/2, height/2-150);
+    text("Labyrinth                     Drücke zum Starten f", width/2, height/2-100);
+    text("Drücke p in einem Spiel, \num wieder ins Menü zurück zu gelangen \nund das Spiel zu pausieren", width/2, height/2 +180);
   }
 
   if (spielStatus.equals("elonaSpiel")) {
