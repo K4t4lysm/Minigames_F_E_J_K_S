@@ -69,7 +69,7 @@ void ElonaDraw() {
 
 
     //Spielstarten
-    if (keyPressed && key == 's') {
+    if (keyPressed && (key == 's'|| key == 'G')) {
       startBildschirmWeltkarte = true;
       inGameWeltkarte = true;
     }
@@ -285,7 +285,7 @@ void ElonaDraw() {
       }
       savePunkteWeltkartenspiel ();      //Speichern der richtigen und falschen Antworten sowie des Punktestands
       fill(0,255,0);
-      text("Drücke p, um in das Menü zurückzu kehren",500,height/2-150);
+      text("Drücke p,\num in das Menü zurückzukehren",500,height/2-150);
     }
   }
 

@@ -21,16 +21,16 @@ class Bombe {
 
   void display(int reichweite) {
 
-    if (zaehler < 180) {
+    if (zaehler < 50) {
       if (feld.spielFeld[x][y].status.equals("explosion")) {
-       zaehler = 180;
+       zaehler = 50;
       }
       image(imgBombe, x*50+25, y*50+25, 50, 50);
     }  
-    if (zaehler >= 180) {
+    if (zaehler == 50) {
       explodieren(x, y, reichweite);
     }   
-    if (zaehler == 200) unexplodieren(x, y, reichweite);
+    if (zaehler >= 60) unexplodieren(x, y, reichweite);
 
     if (gameRunning) zaehler++;
   }

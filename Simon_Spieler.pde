@@ -37,7 +37,7 @@ class Spieler {
      for(int i = 0; i < Bomben.size(); i++)
      {
        Bomben.get(i).display(reichweite);
-      if(Bomben.get(i).zaehler > 200){
+      if(Bomben.get(i).zaehler > 60){
         Bomben.remove(i);
       }
      }

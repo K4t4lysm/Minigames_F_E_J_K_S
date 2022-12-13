@@ -25,11 +25,12 @@ class Spielfeld {
           background(0);
           fill(255,0,0);
           textSize(100);
-          text("Spieler2 Gewinnt!", width/3, height/2-110);
+          text("Spieler2 Gewinnt!", width/2, height/2-110);
           gameRunning = false;
+          //textAlign(CENTER);
           textSize(70);
           fill(0,255,0);
-          text("Drücke die Taste p für das Menü", width/2, height/2);
+          text("Drücke die Taste p für das Menü", width/3, height/2);
           
         }
           
@@ -40,9 +41,10 @@ class Spielfeld {
           textSize(100);
           text("Spieler1 Gewinnt!", width/3, height/2-110);
           gameRunning = false;
+          //textAlign(CENTER);
           textSize(70);
           fill(0,255,0);
-          text("Drücke die Taste p für das Menü", width/2, height/2);
+          text("Drücke die Taste p für das Menü", width/3, height/2);
           
         
         }

@@ -30,22 +30,22 @@ void SimonkeyPressed() {
       }
     }
     //If-Anweisungen für den zweiten Spieler:
-    if (key == 'w') {
+    if (key == 'w' || key == 'W') {
       if (P1.y!=0 && (feld.spielFeld[P1.x][P1.y-1].status.equals("Stein") 
       || feld.spielFeld[P1.x][P1.y-1].status.equals("Fels"))) return;
       P1.y = Math.max(P1.y-1, 0);
     }
-    if (key == 's') {
+    if (key == 's'|| key == 'S') {
       if (P1.y!=19 && (feld.spielFeld[P1.x][P1.y+1].status.equals("Stein")
       || feld.spielFeld[P1.x][P1.y+1].status.equals("Fels"))) return;
       P1.y = Math.min(P1.y+1, 19);
     }
-    if (key == 'd') {
+    if (key == 'd'|| key == 'D') {
       if (P1.x!=19 && (feld.spielFeld[P1.x+1][P1.y].status.equals("Stein")
       || feld.spielFeld[P1.x+1][P1.y].status.equals("Fels"))) return;
       P1.x = Math.min(P1.x+1, 19);
     }
-    if (key == 'a') {
+    if (key == 'a'|| key == 'A') {
       if (P1.x!=0 && (feld.spielFeld[P1.x-1][P1.y].status.equals("Stein")
       || feld.spielFeld[P1.x-1][P1.y].status.equals("Fels"))) return;
       P1.x = Math.max(P1.x-1, 0);

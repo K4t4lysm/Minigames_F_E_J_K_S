@@ -125,6 +125,7 @@ println(spielStatus);
     fill(255);
     ElonaDraw();
   } else  if (spielStatus.equals("simonSpiel")) {
+    frameRate(60);
 
     SimonDraw();
   } else if (spielStatus.equals("johnnySpiel")) {
@@ -146,8 +147,7 @@ println(spielStatus);
 
 void mousePressed() {
 
-  if (key == 'p')spielStatus = "Menu";
-
+  
   if (spielStatus.equals("elonaSpiel")) {
     ElonamousePressed();
   } else if (spielStatus.equals("simonSpiel")) {
@@ -163,7 +163,7 @@ void mousePressed() {
 
 
 void keyPressed() {
-  if(key == 'p')spielStatus = "Menu";
+  if(key == 'p'|| key == 'P')spielStatus = "Menu";
   if(spielStatus.equals("Menu"))
     Menu();
   if (spielStatus.equals("elonaSpiel")) {
@@ -183,14 +183,14 @@ void keyPressed() {
   }
 }
 void Menu() {
-  if (key == 'g') {
+  if (key == 'g'|| key == 'G') {
     spielStatus = "elonaSpiel";
-  } else if (key == 'b')
+  } else if (key == 'b'|| key == 'B')
     spielStatus = "simonSpiel";
-  else if (key == 'j')
+  else if (key == 'j'|| key == 'J')
     spielStatus = "johnnySpiel";
-  else if (key == 'k')
+  else if (key == 'k'|| key == 'K')
     spielStatus = "kautarSpiel";
-  else if (key == 'f')
+  else if (key == 'f'|| key == 'F')
     spielStatus = "finnSpiel";
 }
