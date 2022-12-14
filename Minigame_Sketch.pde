@@ -12,7 +12,7 @@ boolean johnnyEndGame = false;
 String spielStatus = "Menu";
 
 void setup() {
-  size(1200, 900);
+  size(1800, 900);
   // Simon:
   P1 = new Spieler(0, 0);
   P2 = new Spieler(19, 19);
@@ -38,6 +38,12 @@ void setup() {
   gewonnenWeltkarte = new SoundFile(this, "WinSound.wav");  //User: Eponn, on freesound.org, Soundname: Achievement Happy Beeps Jingle
   verlorenWeltkarte = new SoundFile(this, "LoseSound.wav"); //User: Fupicat, on freesound.org, Soundname: 8bit Fall
 
+  
+  //Johnny:
+  
+  paper1 = loadImage("background1.png");
+  explosion = loadImage("explosion.png");
+  
   //Kautar:
   
   xPosition = width* 0.1; // Start Position
@@ -130,13 +136,13 @@ println(spielStatus);
 
     SimonDraw();
   } else if (spielStatus.equals("johnnySpiel")) {
-    //JohnnyDraw();
-    if (spielStatus.equals("johnnySpiel"))johnnyEndGame = true;
-    if (johnnyEndGame) {
-      background(0);
-      textSize(80);
-      text("Drücke die Taste p, \num wieder ins Menü zu kommen", width/2, height/2);
-    }
+    JohnnyDraw();
+    //if (spielStatus.equals("johnnySpiel"))johnnyEndGame = true;
+    //if (johnnyEndGame) {
+    //  background(0);
+    //  textSize(80);
+    //  text("Drücke die Taste p, \num wieder ins Menü zu kommen", width/2, height/2);
+    //}
   } else if (spielStatus.equals("kautarSpiel")) {
     rectMode(CORNER);
     KautarDraw();
@@ -154,7 +160,7 @@ void mousePressed() {
   } else if (spielStatus.equals("simonSpiel")) {
     //SimonmousePressed();
   } else if (spielStatus.equals("johnnySpiel")) {
-    //JohnnymousePressed();
+    johnnyMouse();
   } else if (spielStatus.equals("kautarSpiel")) {
     //KautarmousePressed();
   } else if (spielStatus.equals("finnSpiel")) {
@@ -174,7 +180,7 @@ void keyPressed() {
     SimonkeyPressed();
   }
   if (spielStatus.equals("johnnySpiel")) {
-    //JohnnykeyPressed();
+    JohnnykeyPressed();
   }
   if (spielStatus.equals("kautarSpiel")) {
     //KautarkeyPressed();

@@ -138,5 +138,5 @@ void display() {
   ellipse(xPosition, yPosition, player, player);
   //Boden
   fill(200);
-  rect(0, 615, 1500, 800);
+  rect(0, 615, 2000, 800);
 }
